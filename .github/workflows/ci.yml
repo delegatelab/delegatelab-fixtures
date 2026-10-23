@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: delegatelab-fixtures
+      - uses: actions/checkout@v4
+        with:
+          repository: delegatelab/delegatelab-engine
+          ref: main
+          path: delegatelab-engine
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm test
+        working-directory: delegatelab-fixtures
