@@ -1,0 +1,5 @@
+[
+ {"name":"small-boundary","policy":{"account":"synthetic-account","delegate":"synthetic-delegate","target":"synthetic-sink","recipient":"synthetic-recipient","alternateTarget":"synthetic-other-sink","alternateRecipient":"synthetic-other-recipient","function":"consume","cap":"1"}},
+ {"name":"beyond-js-safe-integer","policy":{"account":"synthetic-account","delegate":"synthetic-delegate","target":"synthetic-sink","recipient":"synthetic-recipient","alternateTarget":"synthetic-other-sink","alternateRecipient":"synthetic-other-recipient","function":"consume","cap":"9007199254740993"}},
+ {"name":"near-i128-boundary","policy":{"account":"synthetic-account","delegate":"synthetic-delegate","target":"synthetic-sink","recipient":"synthetic-recipient","alternateTarget":"synthetic-other-sink","alternateRecipient":"synthetic-other-recipient","function":"consume","cap":"170141183460469231731687303715884105726"}}
+]

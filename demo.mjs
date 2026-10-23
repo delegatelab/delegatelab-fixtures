@@ -1,0 +1,1 @@
+import {readFile} from 'node:fs/promises';import {modelRun} from '../delegatelab-engine/index.mjs';for(const f of JSON.parse(await readFile(new URL('policies.json',import.meta.url),'utf8')))console.log(f.name,modelRun(f.policy,{omitCap:true}).report.status);
